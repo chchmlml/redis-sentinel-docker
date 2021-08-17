@@ -1,4 +1,4 @@
-sentinel monitor master 169.254.176.244 6379 2
+sentinel monitor master ${LOCAL_IP} 6379 2
 sentinel down-after-milliseconds master 5000
 sentinel parallel-syncs master 1
 sentinel failover-timeout master 5000
